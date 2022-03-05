@@ -18,4 +18,4 @@ See [api.business.govt.nz](https://api.business.govt.nz/) for API details.
   - [ ] ...
 
 
-At the moment these are artisanal and hand crafted... it might be worth investigating swagger generation for the rest of them.
+At the moment these are artisanal and hand crafted... it might be worth investigating swagger generation for the rest of them. If you need support for another endpoint, please feel free to raise a PR!
