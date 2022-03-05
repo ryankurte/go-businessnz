@@ -6,6 +6,7 @@ import (
 
 	"github.com/ryankurte/go-businessnz/lib/base"
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestNzbnApi(t *testing.T) {
@@ -24,7 +25,7 @@ func TestNzbnApi(t *testing.T) {
 	t.Run("Lookup by NZBN", func(t *testing.T) {
 
 		entity, err := nzbn.Lookup("9429045862298")
-		assert.Nil(t, err)
+		require.Nil(t, err)
 
 		assert.Equal(t, "9429045862298", entity.Nzbn)
 	})
@@ -32,8 +33,8 @@ func TestNzbnApi(t *testing.T) {
 	t.Run("Lookup by name", func(t *testing.T) {
 
 		entities, err := nzbn.Search(SearchQuery{SearchTerm: "ElectronPowered"})
-		assert.Nil(t, err)
-		assert.NotNil(t, entities)
+		require.Nil(t, err)
+		require.NotNil(t, entities)
 
 		assert.Equal(t, "9429045862298", entities.Items[0].Nzbn)
 	})
