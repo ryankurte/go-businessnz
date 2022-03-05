@@ -4,7 +4,7 @@ See [api.business.govt.nz](https://api.business.govt.nz/) for API details.
 
 ## Status
 
-
+[![CI](https://github.com/ryankurte/go-businessnz/actions/workflows/ci.yml/badge.svg)](https://github.com/ryankurte/go-businessnz/actions/workflows/ci.yml)
 [![GitHub tag](https://img.shields.io/github/tag/ryankurte/go-businessnz.svg)](https://github.com/ryankurte/go-businessnz)
 [![Documentation](https://img.shields.io/badge/docs-godoc-blue.svg)](https://godoc.org/github.com/ryankurte/go-businessnz/lib)
 
