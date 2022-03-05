@@ -84,18 +84,10 @@ func (a *Base) Token() (*oauth2.Token, error) {
 	auth := base64.StdEncoding.EncodeToString([]byte(a.apiKey + ":" + a.apiSecret))
 	req.Header.Add("Authorization", "Basic "+auth)
 
-	if a.debug {
-		log.Printf("Token request: %+v", req)
-	}
-
 	// Execute token request
 	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("error issuing API request: %v", err)
-	}
-
-	if a.debug {
-		log.Printf("Token response: %+v", resp)
 	}
 
 	// Check the response was okay
