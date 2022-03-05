@@ -12,7 +12,7 @@ See [api.business.govt.nz](https://api.business.govt.nz/) for API details.
 ### Supported APIs
 
 - [ ] [NZBN](https://api.business.govt.nz/api/apis/info?name=NZBN&version=v4&provider=mbiecreator)
-  - [x] [`/entities`] (https://api.business.govt.nz/api/apis/info?name=NZBN&version=v4&provider=mbiecreator#!/Entities/EntitiesGet)
+  - [x] [`/entities`](https://api.business.govt.nz/api/apis/info?name=NZBN&version=v4&provider=mbiecreator#!/Entities/EntitiesGet)
   - [x] [`/entities/{nzbn}`](https://api.business.govt.nz/api/apis/info?name=NZBN&version=v4&provider=mbiecreator#!/Entities/EntitiesByNzbnGet)
 - [ ] [Companies Office](https://api.business.govt.nz/api/apis/info?name=Companies&version=v1.2&provider=mbiecreator)
   - [ ] ...
